@@ -1,6 +1,4 @@
-I don't have documented all of the dependacies but these are a few
-
-### Dependances
+### Dependencies
 
 numpy  
 opencv 3  
@@ -8,8 +6,7 @@ pytorch
 cffi  
 editdistance
 
-Install this from the repo:
-https://github.com/SeanNaren/warp-ctc
+Warp-CTC: https://github.com/SeanNaren/warp-ctc
 
 
 ### Running
@@ -35,18 +32,10 @@ python character_set.py prepare_IAM_Lines/raw_gts/lines/txt/training.json prepar
 
 ### Train
 
-python train.py sample_config.json
-
-or 
-
 python train.py sample_config_iam.json
 
-This will run way too many epochs, just kill whenever
+This will train indefienetely, interupt execution whenever at will.
 
 ### Perform Recogition
 
-python recognize.py sample_config.json prepare_font_data/output/0.png
-
-or 
-
-python recognize.py sample_config_iam.json prepare_IAM_Lines/lines/r06/r06-000/r06-000-00.png
+python recognize.py sample_config_iam.json 
